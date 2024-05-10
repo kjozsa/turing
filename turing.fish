@@ -1,9 +1,8 @@
 #!/usr/bin/fish
 set SCRIPT_NAME (basename (status current-filename))
 
-
 if test "$argv" = "-h"
-    echo "Usage: $SCRIPT_NAME [-h] <models>"
+    echo "Usage: $SCRIPT_NAME [-h] <models_to_test>"
     exit 0
 end
 
@@ -13,9 +12,8 @@ if test -z "$argv"
 	set argv $default_args
 end
 
-set_color red
-echo "Testinxxxxxxxg models: $argv"
-set_color normal
+set_color --bold red
+echo -en "Testing models: $argv\n\n"
 
 for model in $argv
 	set_color --bold blue
