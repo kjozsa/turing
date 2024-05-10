@@ -1,4 +1,4 @@
-// such comment lines are discarded already
+// such comment lines get discarded 
 
 ## General questions
 I have 2 apples. I ate 1 banana. How many apples do I have now?

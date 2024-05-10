@@ -24,8 +24,10 @@ for model in $argv
 
 		set_color --bold yellow
 		echo "QUESTION: $question "
+
 		set_color --bold green
 		echo "ANSWER: "
+		
 		set_color normal
 		ollama run "$model" "$question"; 
 		echo "------------------------"
