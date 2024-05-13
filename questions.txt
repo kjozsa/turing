@@ -2,9 +2,10 @@
 
 ## General questions
 I have 2 apples. I ate 1 banana. How many apples do I have now?
-//tell me 5 possible names for a newborn girl. Give a short reasoning why you would choose that name!
+tell me 5 possible names for a newborn girl. Give a short reasoning why you would choose that name!
+how much is 237*19?
 
-//## Hungary-related questions
-//list 10 Hungarian events from history in a historical order
-//tell me 20 hungarian words, each starting with the previous word's last letter, the first word starts with letter a
+## Hungary-related questions
+list 10 Hungarian events from history in a historical order
+tell me 20 hungarian words, each starting with the previous word's last letter, the first word starts with letter a
 
