@@ -50,9 +50,8 @@ for model in $argv
 		if test -n "$solution"
     		set_color --bold red
 		    echo "Checking solution with $EVAL_MODEL: "
-    		set_color red
-		    echo -en "Score the answer on a scale of 0-10 against the known solution. Respond only with a single number!; \n\n====\n Solution: $solution\n\n====\n Answer: $answer\n\n"| xargs echo
-		    echo -en "Score the answer on a scale of 0-10 against the known solution. Respond only with a single number!; \n\n====\n Solution: $solution\n\n====\n Answer: $answer\n\n" | ollama run $EVAL_MODEL
+    		set_color black
+		    echo -en "Score the answer on a scale of 0-10 against the known solution. \n\n====\n Solution: $solution\n\n====\n Answer: $answer\n\n" | ollama run $EVAL_MODEL
         	set_color normal
         end
 		echo "------------------------"
