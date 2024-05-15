@@ -1,5 +1,6 @@
 #!/usr/bin/fish
 set SCRIPT_NAME (basename (status current-filename))
+set EVAL_MODEL "mistral:7b-instruct-v0.2-q8_0"
 
 if test "$argv" = "-h"
     echo "Usage: $SCRIPT_NAME [-h] <models_to_test>"
@@ -13,7 +14,7 @@ if test -z "$argv"
 end
 
 set_color --bold red
-echo -en "Testing models: $argv\n\n"
+echo -en "Testing models: \n"(echo $argv | tr ' ' '\n' | string collect) "\n\n"
 
 for model in $argv
 	set_color --bold blue
@@ -29,14 +30,31 @@ for model in $argv
 			continue
 		end
 
+		set solution (string match -r '\((.*)\)' $question | tail -1)
+        set question (string replace -r '\(.*\)' '' -- $question)
+
 		set_color --bold yellow
 		echo "QUESTION: $question "
+
+		if test -n "$solution"
+    		set_color --bold purple
+		    echo "SOLUTION: $solution"
+		end
 
 		set_color --bold green
 		echo "ANSWER: "
 		
 		set_color normal
-		ollama run "$model" "$question"; 
+		set answer (ollama run "$model" "$question" | tee /dev/stderr)
+
+		if test -n "$solution"
+    		set_color --bold red
+		    echo "Checking solution with $EVAL_MODEL: "
+    		set_color red
+		    echo -en "Score the answer on a scale of 0-10 against the known solution. Respond only with a single number!; \n\n====\n Solution: $solution\n\n====\n Answer: $answer\n\n"| xargs echo
+		    echo -en "Score the answer on a scale of 0-10 against the known solution. Respond only with a single number!; \n\n====\n Solution: $solution\n\n====\n Answer: $answer\n\n" | ollama run $EVAL_MODEL
+        	set_color normal
+        end
 		echo "------------------------"
 	end
 end

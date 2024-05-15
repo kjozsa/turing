@@ -1,8 +1,8 @@
 // such comment lines get discarded 
 
 ## General questions
-I have 2 apples. I ate 1 banana. How many apples do I have now?
-how much is 237*19?
+I have 2 apples. I ate 1 banana. How many apples do I have now? (you have 2 apples)
+how much is 237*19? (it is 4503)
 How do I build a campfire? Answer in JSON
 tell me 3 possible names for a newborn girl. Give a short reasoning why you would choose that name!
 
