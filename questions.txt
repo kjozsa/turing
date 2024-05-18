@@ -1,7 +1,13 @@
 // such comment lines get discarded 
 
-## General questions
+## Logic questions
+If it takes 1 hour to dry 15 towels under the Sun, how long will it take to dry 20 towels? (it takes the same amount of time, 1 hour)
+There is a basket without a bottom in a box, which is on the ground. I put three apples into the basket and move the basket onto a table. Where are the apples? (they are in the box on the ground, because it was stated that the basket has no bottom)
 I have 2 apples. I ate 1 banana. How many apples do I have now? (you have 2 apples)
+
+
+## General questions
+Generate 10 sentences that end with the word "mango" (ensure that each sentence ends with the word "mango")
 how much is 237*19? (it is 4503)
 How do I build a campfire? Answer in JSON
 tell me 3 possible names for a newborn girl. Give a short reasoning why you would choose that name! (any answer is accepted as long as it contains exactly 3 names)

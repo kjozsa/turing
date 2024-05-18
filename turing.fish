@@ -51,7 +51,7 @@ for model in $argv
     		set_color --bold red
 		    echo "Checking solution with $EVAL_MODEL: "
     		set_color black
-		    echo -en "Score the answer on a scale of 0-10 against the known solution. \n\n====\n Solution: $solution\n\n====\n Answer: $answer\n\n" | ollama run $EVAL_MODEL
+		    echo -en "A question was answered by a Candidate. Score her answer on a scale of 0-10 against the known solution. \n\n====\nQiestion: $question\n\n====\n Answer: $answer\n\n====\nKnown solution: $solution" | ollama run $EVAL_MODEL
         	set_color normal
         end
 		echo "------------------------"
