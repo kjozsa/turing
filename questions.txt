@@ -1,4 +1,9 @@
-// such comment lines get discarded 
+// such comment lines get discarded
+## Hungarian language skills-
+please translate this to Hungarian: 'If it takes 1 hour to dry 15 towels under the Sun, how long will it take to dry 20 towels?' (ensure that the candidate responded in Hungarian. The Hungarian response's meaning should be 'Ha 15 törölköző egy óra alatt szárad meg a napon, akkor 20 törölköző hány óra alatt szárad meg?'. Trying to answer the question is a bad response, the task was to translate the question!)
+
+kérlek mondj 5 mondatot tűzvédelmi előírásokról (validate that the candidate responded with 5 sentences and all of them are in Hungarian)
+
 
 ## Logic questions
 If it takes 1 hour to dry 15 towels under the Sun, how long will it take to dry 20 towels? (it takes the same amount of time, 1 hour)
@@ -9,10 +14,10 @@ I have 2 apples. I ate 1 banana. How many apples do I have now? (you have 2 appl
 ## General questions
 Generate 10 sentences that end with the word "mango" (ensure that each sentence ends with the word "mango")
 how much is 237*19? (it is 4503)
-How do I build a campfire? Answer in JSON
+How do I build a campfire? Answer in JSON (validate that output is correctly formatted JSON and content is about building a campfire)
 tell me 3 possible names for a newborn girl. Give a short reasoning why you would choose that name! (any answer is accepted as long as it contains exactly 3 names)
 
 ## Hungary-related questions
-list 10 Hungarian events from history in a historical order
-tell me 20 hungarian words, each starting with the previous word's last letter, the first word starts with letter a
+list 10 Hungarian events from history in a historical order (validate that 10 events were mentioned and their years are in historical order)
+tell me 20 hungarian words, each starting with the previous word's last letter, the first word starts with letter A (check that each words first letter is the same as the previous word's last letter!)
 

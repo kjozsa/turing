@@ -1,6 +1,7 @@
 #!/usr/bin/fish
 set SCRIPT_NAME (basename (status current-filename))
 set EVAL_MODEL "mistral:7b-instruct-v0.2-q8_0"
+#set EVAL_MODEL "mistral:7b-instruct-v3-q5km"
 
 if test "$argv" = "-h"
     echo "Usage: $SCRIPT_NAME [-h] <models_to_test>"
