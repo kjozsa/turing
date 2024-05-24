@@ -9,6 +9,7 @@ kérlek mondj 5 mondatot tűzvédelmi előírásokról (validate that the candid
 If it takes 1 hour to dry 15 towels under the Sun, how long will it take to dry 20 towels? (it takes the same amount of time, 1 hour)
 There is a basket without a bottom in a box, which is on the ground. I put three apples into the basket and move the basket onto a table. Where are the apples? (they are in the box on the ground, because it was stated that the basket has no bottom)
 I have 2 apples. I ate 1 banana. How many apples do I have now? (you have 2 apples)
+Kérlek fejezd be a mondatot számítógép architektúra témakörben: "A számítógépek teljesítménye 5 évenként...." 
 
 
 ## General questions
